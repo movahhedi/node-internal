@@ -1,0 +1,47 @@
+{
+	"name": "node-internal",
+	"version": "0.1.1",
+	"description": "An array of Node's internal module names",
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/movahhedi/node-internal.git"
+	},
+	"author": "Shahab Movahhedi <dev@shmovahhedi.com> (https://shmovahhedi.com)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/movahhedi/node-internal/issues"
+	},
+	"homepage": "https://github.com/movahhedi/node-internal#readme",
+	"main": "./dist/index.mjs",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"require": "./dist/index.js",
+			"import": "./dist/index.mjs",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"keywords": [
+		"node",
+		"internal",
+		"modules",
+		"module",
+		"vite",
+		"esbuild",
+		"webpack",
+		"build",
+		"node_modules"
+	],
+	"scripts": {
+		"build": "pkgroll"
+	},
+	"devDependencies": {
+		"pkgroll": "^2.5.1",
+		"typescript": "^5.6.3"
+	}
+}
